@@ -1,11 +1,11 @@
 class Score 
 {
-	private int jap;	// 国語	
-	private int math;	// 数学	
-	private int eng;	// 英語	
+	protected int jap;	// 国語	
+	protected int math;	// 数学	
+	protected int eng;	// 英語	
 
-	private double average;	// 3科目平均
-	private int sum;		// 3科目合計
+	protected double average;	// 3科目平均
+	protected int sum;		// 3科目合計
 
 	public int setJap(int jap)
 	{
@@ -52,12 +52,12 @@ class Score
 		return 0;
 	}
 
-	private void calcSum()
+	protected void calcSum()
 	{
 		this.sum = this.math + this.eng +this.jap;
 	}
 
-	private void calcAve()
+	protected void calcAve()
 	{
 		this.average = this.sum/3.0;
 	}
